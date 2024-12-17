@@ -1,0 +1,232 @@
+#hero {
+    background-image: url('../assets/images/bannersm6.jpg');
+    height: 430px;
+    width: 100%;
+    background-size: cover;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+  }
+  
+  #hero h4 {
+    padding-bottom: 15px;
+    color: #222;
+  }
+  
+  #hero h1 {
+    color: #ee4c7c;
+  }
+  
+  #hero p {
+    color: #000;
+    font-weight: 400;
+  }
+  
+  #hero button {
+    background-color: #ee4c7c;
+    color: white;
+    height: 90px;
+    width: 250px;
+    border-radius: 25%;
+    border: 0;
+    font-size: 35px;
+    font-weight: 600;
+    cursor: pointer;
+  }
+
+
+
+#logos {
+    background-color: white;
+    margin: 25px 0;
+    padding: 30px;
+    overflow: hidden;
+    white-space: nowrap;
+    z-index: 1;
+}
+
+#logos:hover .logos-slide {
+    animation-play-state: paused;
+}
+
+.logos-slide {
+    white-space: nowrap;
+    height: 90px;
+    display: inline-block;
+    animation: 25s slide infinite linear;
+}
+
+.logos-slide img {
+    height: 70px;
+    margin: 20px;
+}
+
+#deals .text{
+    padding:10px;
+    height:100px;
+    width:100%;
+    background-color:#499691;
+    text-align:center;
+    border:2px solid #222;
+
+}
+#deals .text h1{
+    padding:10px;
+    
+    }
+.size{
+    height:200px;
+    width:150px;
+    background-size:cover;
+}
+
+.fas, .bx {
+    font-size: 30px; /* Adjust size */
+    color: #000; /* Optional: Set color */
+  }
+  
+#product1{
+    text-align: center;
+    overflow: hidden;
+}
+#product1 .pro-container{
+    display: flex;
+    justify-content:space-between;
+    padding-top: 20px;
+    flex-wrap: wrap;
+}
+#product1 .pro{
+    width: 23%;
+    min-width: 250px;
+    padding: 10px 12px;
+    border: 1px solid #cce7d0;
+    border-radius: 25px;
+    cursor: pointer;
+    box-shadow: 20px 20px 30px rgba(0, 0, 0, 0.02);
+    margin: 15px 0;
+    transition: 0.2s ease;
+    position: relative;
+}
+#product1 .pro:hover{
+    box-shadow: 20px 20px 30px rgba(0, 0, 0, 0.19);
+}
+#product1 .pro img{
+    width:100%;
+    height:350px;
+    border-radius: 20px;
+    background-size: cover;
+    background-position: center;
+}
+
+#product1 .pro .des{
+    text-align: start;
+    padding: 10px 0;
+}
+
+#product1 .pro .des span{
+    color: #06606063;
+    font-size: 12px;
+}
+#product1 .pro .des h5{
+    padding-top: 7px;
+    color: #1a1a1a;
+    font-size: 14px;
+}
+#product1 .pro .des i{
+    font-size: 12px;
+    color: rgb(243, 181, 25);
+}
+#product1 .pro .des h4{
+    padding-top: 7px;
+    font-size: 15px;
+    font-weight: 700;
+    color: #088178;
+}
+#product1 .pro .cart{
+    width: 40px;
+    height: 40px;
+    line-height: 40px;
+    border-radius: 50px;
+    background-color: #e8f6ea;
+    font-weight: 500;
+    color: #088178;
+    border: 1px solid #cce7d0;
+    position: absolute;
+    bottom: 20px;
+    right: 10px;
+}
+
+#banner{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center; 
+    text-align: center;
+    background-image: url("../assets/images/banner1.jpeg");
+    width:100%;
+    height:40vh;
+    background-size: cover;
+    background-position: center;
+    overflow: hidden;
+}
+#banner h4{
+    color: #fff;
+    font-size: 16px;
+}
+#banner h2{
+    color: #fff;
+    font-size: 30px;
+    padding: 10px 0;
+}
+#banner h2 span{
+    color: #ff3838;
+}
+#banner button:hover{
+    background: #088178;
+    color: #fff;
+}
+
+#sm-banner{
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    overflow: hidden;
+}
+#sm-banner .banner-box{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items:flex-start; 
+    background-image: url("../assets/images/bannersm5.jpg");
+    min-width:670px;
+    height:50vh;
+    background-size: cover;
+    background-position: center;
+    padding: 30px;
+}
+#sm-banner .banner-box2{
+    background-image: url("../assets/images/bannersm4.avif"); 
+}
+#sm-banner h1{
+    color: #000;
+    font-size: 40px;
+    font-weight: 300;
+    padding-top:10px;
+}
+#sm-banner h2{
+    color: #ff3838;
+    font-size: 32px;
+    font-weight: 800;
+}
+#sm-banner span{
+    color: #ff3838;
+    font-size: 18px;
+    font-weight: 500;
+    padding-bottom: 15px;
+}
+#sm-banner .banner-box:hover button{
+    background: #088178;
+    border: 1px solid #088178;
+}
+

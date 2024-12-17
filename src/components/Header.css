@@ -1,0 +1,124 @@
+/* Reset some default styles */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Spartan', sans-serif;
+}
+
+body {
+    background: #f2f2f2;
+    width: 100%;
+}
+
+/* Header Section */
+#header {
+    display: flex;
+    align-items: center; /* Vertically align items in the middle */
+    justify-content: space-between; /* Align items at the two ends: logo on the left, navbar on the right */
+    padding: 15px 80px;
+    background: #c788bc;
+    font-family: 'Times New Roman', Times, serif;
+    font-weight: 600;
+    font-size: 30px;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.06);
+    position: sticky;
+    top: 0;
+    left: 0;
+    z-index: 1000;
+    scroll-behavior: smooth;
+}
+
+/* Flexbox to ensure logo and navbar items are properly spaced */
+#header .logo {
+    flex: 3; /* Take up remaining space */
+    font-size: 34px;
+    font-weight: 616;
+    color: #090101;
+}
+
+/* Navbar Styling */
+#navbar {
+    display: flex;
+    align-items: center; /* Vertically align items in the middle */
+    justify-content: flex-start; /* Align items to the left of the navbar */
+    width: 100%;
+    padding-right: 4px;
+    margin-left: 50px; /* Creates additional space between the logo and the navbar */
+}
+
+#navbar ul {
+    display: flex; /* Align navbar items horizontally */
+    margin: 0;
+    padding: 0;
+    list-style-type: none;
+    gap: 20px; /* Adds space between navbar items */
+}
+
+#navbar li {
+    position: relative;
+}
+
+#navbar li a {
+    text-decoration: none;
+    font-size: 16px;
+    font-weight: 600;
+    color: #222;
+    transition: 0.3s ease;
+    padding: 5px 10px; /* Add padding inside links for better clickability */
+}
+
+#navbar li a:hover {
+    color: #000;
+}
+
+/* Active Link Styling */
+#navbar ul li a.active {
+    position: relative;
+    color: #000;
+}
+
+#navbar ul li a.active::after {
+    content: '';  /* Create the pseudo-element */
+    position: absolute; /* Position it relative to the link */
+    bottom: 0;
+    left: 0;
+    width: 100%; /* Make the line span the full width of the link */
+    height: 1px; /* Set the line thickness */
+    background-color: black; /* Black color for the line */
+}
+
+/* Navbar Item Active Border (Optional) */
+#navbar ul li a.active {
+    border-bottom: 3px solid black;  /* Underline the active link */
+    color: #000;
+}
+
+/* Search Input */
+.search {
+    width: 24vw;
+    padding: 9px 17px;
+    border: 0.5px solid grey;
+    background: #f7f8fd;
+    border-radius: 3px;
+}
+
+/* Mobile Navbar */
+#mobile {
+    display: none;
+    align-items: center;
+}
+
+#close {
+    display: none;
+}
+
+/* Animation (if needed) */
+@keyframes slide {
+    from {
+        transform: translateX(0);
+    }
+    to {
+        transform: translateX(-100%);
+    }
+}

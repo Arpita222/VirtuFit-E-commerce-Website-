@@ -1,0 +1,42 @@
+/* sm-banner men */
+#men-header{
+    background-image:url("../assets/images/menposter.webp");
+    width: 100%;
+    height: 50vh;
+    background-size:cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    display: flex;
+    /* justify-content: center;
+    text-align: center; */
+    /* flex-direction: column; */
+    /* padding: 14px; */
+    object-fit: cover;
+}
+
+#sm-banner .banner-box-men{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items:flex-end; 
+    background-image: url("../assets/images/mensmbanner2.jpg");
+    min-width:670px;
+    height:50vh;
+    background-size: cover;
+    background-position: center;
+    padding: 30px;
+}
+#sm-banner .banner-box2-men{
+    background-image: url("../assets/images/mensmbanner.jpg"); 
+    align-items:flex-start; 
+}
+#sm-banner .banner-box-men:hover button{
+    background: #088178;
+    border: 1px solid #088178;
+}
+#sm-banner .banner-box2-men:hover button{
+    background: #088178;
+    border: 1px solid #088178;
+}
+
+/* Add more styles for the rest of the page (product1, header, etc.) */
